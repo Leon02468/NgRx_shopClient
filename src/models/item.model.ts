@@ -1,5 +1,5 @@
-export interface ItemModel{
+export interface item{
     id: string;
-    name: string;
+    title: string;
     description: string;
 }

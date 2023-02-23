@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { ItemModel } from 'src/models/item.model';
 import { ItemService } from './services/item.service';
 import * as ItemActions from '../NgRx/actions/item.action';
 import { Observable } from 'rxjs';
@@ -17,15 +16,15 @@ export class AppComponent implements OnInit{
 
   constructor(
     private store: Store<{item: ItemState}>,
-    private itemService: ItemService,
+    // private itemService: ItemService,
     ){
-      this.items$ = store.select('item');
+      this.items$ =this.store.select('item');
     }
 
   ngOnInit(){
-    this.itemService.getAllItems().subscribe((data) => {
-      console.log(data);
-    });
+    // this.itemService.getAllItems().subscribe((data) => {
+    //   console.log(data);
+    // });
   }
 
   getItems(){

@@ -1,4 +1,4 @@
-import { createReducer, INITIAL_STATE, on } from "@ngrx/store";
+import { createReducer, on } from "@ngrx/store";
 import { ItemState } from "../states/item.state";
 import * as ItemActions from '../actions/item.action';
 

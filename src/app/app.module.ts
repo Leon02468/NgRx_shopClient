@@ -20,7 +20,7 @@ import { ItemEffects } from '../NgRx/effects/item.effect';
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({
-      itemReducer: itemReducer,
+      item: itemReducer,
     }, {}),
     EffectsModule.forRoot([
       ItemEffects

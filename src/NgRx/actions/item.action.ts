@@ -1,5 +1,5 @@
 import { createAction, props } from "@ngrx/store";
-import { ItemModel } from "src/models/item.model";
+import { item } from "src/models/item.model";
 
 export const getAllItems = createAction(
     '[Item] Get All Items',
@@ -7,7 +7,7 @@ export const getAllItems = createAction(
 
 export const getAllItemsSuccess = createAction(
     '[Item] Get All Items Success',
-    props<{ item: ItemModel[]}>()
+    props<{ item: item[]}>()
 );
 
 export const getAllItemsFailure = createAction(

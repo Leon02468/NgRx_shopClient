@@ -1,7 +1,7 @@
-import { ItemModel } from "src/models/item.model";
+import { item } from "src/models/item.model";
 
 export interface ItemState{
-    item: ItemModel[];
+    item: item[];
     isSuccess: boolean;
     loading: boolean;
     error: string;
